@@ -1,0 +1,39 @@
+.navbar {
+    width: 95vw;
+    height: 10vh;
+    padding: 0 70px;
+    background-color: #FFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0, .4);
+    border: 1px solid #FE8A03;
+    border-radius: 20px;
+    position: fixed;
+    z-index: 100;
+    top: 20px;
+}
+
+.navTxt {
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #FE8A03;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+.navTxt:hover {
+    transform: scale(1.2);
+    filter: brightness(1.1);
+}
+
+.navTxt:active {
+    transform: scale(.95);
+}
+
+img {
+    box-shadow: 2px 2px #FE8A03;
+    border-radius: 100px;
+    filter: brightness(1.05);
+}
