@@ -18,6 +18,8 @@
 .logo>img{
     width: 100px;
     height: auto;
+    box-shadow: 2px 2px #FE8A03;
+    border-radius: 100px;
 }
 
 .logo>p{

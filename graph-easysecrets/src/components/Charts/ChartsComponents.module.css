@@ -1,0 +1,17 @@
+.chart {
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.miniChart {
+    width: 15vw;
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    border: 1px solid #FE8A03;
+    border-radius: 10px;
+}
