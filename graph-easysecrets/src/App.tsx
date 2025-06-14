@@ -1,10 +1,7 @@
 import React from 'react';
-import './App.css';
 
-//lib de rotas
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-//components de páginas
 import Home from './pages/Home';
 import Dashboard from './pages/Dashboard';
 import NotFound from './pages/NotFound';
