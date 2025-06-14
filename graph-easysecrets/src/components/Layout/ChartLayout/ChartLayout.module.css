@@ -2,49 +2,50 @@
     width: 95vw;
     height: 85vh;
     margin: 10px;
-    border: 1px solid #FE8A03;
+    border: 1px solid var(--theme-color);
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #FFF;
+    background-color: var(--card-bg-color);
     gap: 10px;
 }
 
 p {
     font-size: 24px;
     font-weight: 600;
+    color: var(--text-color);
     margin: 10px;
     text-align: center;
-    justify-self: end;
 }
 
 .btn {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 30px;
+    gap: 10px;
 }
 
 button {
-    border: 2px solid #FE8A03;
+    border: 2px solid var(--theme-color);
     border-radius: 5px;
     background-color: inherit;
     padding: 5px;
-    margin: 10px;
     transition: all .3s ease;
 }
 
 .active {
-    background-color: #FE8A03;
-    color: #FFF;
+    background-color: var(--theme-color);
+    color: var(--text-color);
+}
+
+.desactive {
+    color: var(--text-color);
 }
 
 .chartsDiv {
-    width: 1000px;
-    height: 500px;
-    padding: 10px;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -53,10 +54,31 @@ button {
 
 button:hover {
     transform: scale(1.1);
-    box-shadow: 0 0 5px #FE8A03;
+    box-shadow: 0 0 5px var(--theme-color);
 }
 
 button:active {
     transform: scale(.95);
     background-color: #dedede;
+}
+
+/*--------------------BREAKPOINTS PARA RESPONSIVIDADE------------------*/
+
+/* Celular grande */
+@media (max-width: 600px) {
+    .layout {
+        justify-content: space-around;
+    }
+
+    p {
+        font-size: 18px;
+        margin: 0px;
+    }
+}
+
+/* Celular padrão */
+@media (max-width: 480px) {
+    p {
+        font-size: 16px;
+    }
 }
