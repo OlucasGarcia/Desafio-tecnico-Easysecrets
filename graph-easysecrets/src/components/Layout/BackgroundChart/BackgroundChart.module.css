@@ -1,0 +1,17 @@
+.backChart {
+    position: absolute;
+    width: 100%;
+    height: 50vh;
+    opacity: 0.5;
+    pointer-events: none;
+    bottom: 1%;
+}
+
+/*--------------------BREAKPOINTS PARA RESPONSIVIDADE------------------*/
+
+/* Celular grande */
+@media (max-width: 600px) {
+    .backChart {
+        height: 20vh;
+    }
+}
