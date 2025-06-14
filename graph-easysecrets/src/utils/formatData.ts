@@ -1,3 +1,5 @@
+//Função responsável por formatar os dados do arquivos vendas.json para consumo em formato compatível com a biblioteca Recharts
+
 import vendas from "../data/vendas.json";
 
 export interface VendaMes {
