@@ -10,6 +10,8 @@ import { FaChartArea } from "react-icons/fa";
 import ChartLineComponent from "../../Charts/ChartLine";
 import ChartBarComponent from "../../Charts/ChartBar";
 import ChartAreaComponent from "../../Charts/ChartArea";
+import exportarPDF from "../../../utils/exportPDF";
+import Button from "../../Button";
 
 function ChartLayout() {
 
@@ -21,28 +23,39 @@ function ChartLayout() {
                 Escolha o tipo de gráfico:
             </p>
             <div className={styles.btn}>
-                <button onClick={() => setTipo("linha")}>
+                <button 
+                onClick={() => setTipo("linha")}
+                className={`${tipo === "linha" ? styles.active : ''}`}
+                >
                     <FaChartLine
                         size={34}
                     />
                 </button>
-                <button onClick={() => setTipo("barra")}>
+                <button 
+                onClick={() => setTipo("barra")}
+                className={`${tipo === "barra" ? styles.active : ''}`}
+                
+                >
                     <FaChartBar
                         size={34}
                     />
                 </button>
-                <button onClick={() => setTipo("area")}>
+                <button 
+                onClick={() => setTipo("area")}
+                className={`${tipo === "area" ? styles.active : ''}`}
+                
+                >
                     <FaChartArea
                         size={34}
                     />
                 </button>
             </div>
-
-            <div className={styles.chartsDiv}>
-                {tipo === "linha" && <ChartLineComponent />}
-                {tipo === "barra" && <ChartBarComponent />}
-                {tipo === "area" && <ChartAreaComponent />}
+            <div className={styles.chartsDiv} id="grafico">
+                {tipo === "linha" && <><p>GRÁFICO DE LINHAS</p><ChartLineComponent /></>}
+                {tipo === "barra" && <><p>GRÁFICO DE BARRAS</p><ChartBarComponent /></>}
+                {tipo === "area" && <><p>GRÁFICO DE ÁREAS</p><ChartAreaComponent /></>}
             </div>
+            <Button label="Exportar como PDF" onClick={() => exportarPDF('grafico')}/>
         </div>
     )
 }
