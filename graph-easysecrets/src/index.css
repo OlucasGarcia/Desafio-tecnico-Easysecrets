@@ -6,3 +6,17 @@
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
+
+:root {
+  --card-bg-color: #EFEFEF;
+  --bg-color: #CFCFCF;
+  --text-color: #0d0d0d;
+  --theme-color: #FE8A03;
+}
+
+[data-theme="dark"] {
+  --card-bg-color: #111111;
+  --bg-color: #0d0d0d;
+  --text-color: #F0F0F0;
+  --theme-color: #FE8A03;
+}
