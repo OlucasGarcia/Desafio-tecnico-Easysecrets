@@ -1,25 +1,30 @@
-import jsPDF from "jspdf";
-import html2canvas from "html2canvas";
+//Função responsável por exportar gráficos em formato svg
 
-const exportarPDF = (elementId: string, nomeArquivo: string = `grafico${Math.floor(Math.random()*1000)}`) => {
-    const input = document.getElementById(elementId) as HTMLElement;
+const exportarPDF = (elementId: string, nomeArquivo: string = `grafico${Math.floor(Math.random() * 1000)}`) => {
+    const svgElement = document.getElementById(elementId);
 
-    if (!input) {
+    if (!svgElement) {
         console.error(`Elemento com id '${elementId}' não encontrado.`);
         return;
     }
 
-    html2canvas(input, {scale: 4}).then((canvas) => {
-        const imgData = canvas.toDataURL('image/png');
-        const pdf = new jsPDF({
-            orientation: 'landscape',
-            unit: 'px',
-            format: [canvas.width, canvas.height],
-        });
+    const serializer = new XMLSerializer();
+    const source = serializer.serializeToString(svgElement);
 
-        pdf.addImage(imgData, 'PNG', 0, 0, canvas.width, canvas.height);
-        pdf.save(`${nomeArquivo}.pdf`);
-    });
+    const svgBlob = new Blob(
+        [`<?xml version="1.0" standalone="no"?>\n${source}`],
+        { type: "image/svg+xml;charset=utf-8" }
+    );
+
+    const url = URL.createObjectURL(svgBlob);
+
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = `${nomeArquivo}.svg`;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    URL.revokeObjectURL(url);
 };
 
 export default exportarPDF;
