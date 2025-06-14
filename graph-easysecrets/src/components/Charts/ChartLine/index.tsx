@@ -8,7 +8,7 @@ import { formatarDados, VendaMes } from "../../../utils/formatData";
 
 const dados: VendaMes[] = formatarDados();
 
-const cores = ["#ba0606", "#5702b1", "#0bb102"];
+const cores = ["#ba0606", "#731bd8", "#0bb102"];
 
 function ChartLineComponent() {
 
