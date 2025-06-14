@@ -14,11 +14,9 @@ function ChartBarComponent() {
 
     const produtos = Object.keys(dados[0]).filter((key) => key !== "mes");
 
-    console.log(produtos)
-
     return (
         <div className={styles.chart}>
-            <ResponsiveContainer width="100%" height={400}>
+            <ResponsiveContainer >
                 <BarChart data={dados} margin={{ top: 20, right: 30, left: 0, bottom: 5 }}>
                     <CartesianGrid strokeDasharray="3 3" />
                     <XAxis dataKey="mes" />
