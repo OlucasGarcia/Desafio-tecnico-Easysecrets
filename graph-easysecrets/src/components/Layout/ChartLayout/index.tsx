@@ -52,7 +52,7 @@ function ChartLayout() {
                     {tipo === "barra" && <><p>GRÁFICO DE BARRAS</p><ChartBarComponent /></>}
                     {tipo === "area" && <><p>GRÁFICO DE ÁREAS</p><ChartAreaComponent /></>}
                 </div>
-                <Button label="Exportar como PDF" onClick={() => exportarPDF('grafico')} />
+                <Button label="Exportar como SVG" onClick={() => exportarPDF('grafico')} />
             </motion.div>
         </div>
     )
