@@ -30,9 +30,9 @@ cd graph-easysecrets/
 
 - 2. **Instalar todas as dependências**
 ```
-npm install --legacy-peer-deps 
+npm install
 ## ou com yarn 
-yarn install --ignore-engines 
+yarn install
 ```
 
 - 3. **Executar a aplicação em desenvolvimento**
@@ -96,28 +96,28 @@ graph-easysecrets/
 ## 🖼️ Screenshots
 
 ### **Home**
- <img src="" width="400px" />
+ <img src="https://github.com/user-attachments/assets/f37b83a6-bfb9-48e6-ba57-475864510ddb" width="400px" />
 
 *A tela inicial da aplicação, com acesso rápido às funcionalidades e um gráfico decorativo ao fundo. Interface limpa, com foco na navegação simples e intuitiva.*
 
 ---
 
 ### **Dashboard - Gráfico de Linhas**
-<img src="" width="400px" />
+<img src="https://github.com/user-attachments/assets/8e0fb6d0-85c9-4d0e-ac82-c20af502bb51" width="400px" />
 
 *Exibição dos dados no formato de gráfico de linhas, ideal para acompanhar a evolução dos dados ao longo do tempo.*
 
 ---
 
 ### **Dashboard - Gráfico de Barras**
-<img src="" width="400px" />
+<img src="https://github.com/user-attachments/assets/d4dc252e-29f7-42ff-9c22-cd38962fa016" width="400px" />
 
 *Visualização dos dados no formato de gráfico de barras, facilitando a comparação direta entre diferentes produtos ou períodos.*
 
 ---
 
 ### **Home - Mobile (Dark Theme)**
-<img src="" width="400px" />
+<img src="https://github.com/user-attachments/assets/251648c1-8698-4b14-a082-7df7b4bac44a" width="400px" />
 
 *Versão mobile da tela Home utilizando o tema escuro, demonstrando tanto a responsividade quanto a adaptação visual para diferentes preferências de tema.*
 
