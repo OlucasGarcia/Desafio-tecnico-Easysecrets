@@ -24,8 +24,9 @@ Acesse o projeto online no link a seguir:
 
 - 1. **Clonar o repositório**
 ``` 
-git clone https://github.com/OlucasGarcia/Desafio-tecnico-Easysecrets 
-cd graph-easysecrets/ 
+git clone https://github.com/OlucasGarcia/Desafio-tecnico-Easysecrets
+cd Desafio-tecnico-Easysecrets/
+cd graph-easysecrets/
 ```
 
 - 2. **Instalar todas as dependências**
