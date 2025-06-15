@@ -7,7 +7,7 @@ O Graph EasySecrets é um sistema de visualização de dados que permite aos usu
 
 ## 🔗 **Link do projeto em produção**
 Acesse o projeto online no link a seguir: 
-<a href="" target="_blank">📊 Graph Easysecrets<a/>
+<a href="https://desafio-tecnico-easysecrets-omega.vercel.app/" target="_blank">📊 Graph Easysecrets<a/>
 
 
 ---
